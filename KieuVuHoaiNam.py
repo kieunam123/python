@@ -187,7 +187,7 @@ def bt12():
             print('Dữ liệu đầu vào không hợp lệ')   
     a=''
     for i in str(n) : 
-        a+=str(i)+"+"                 
-    print('tổng của %d là :'%n,a,'0 =',TongChuSo(n))
+        a+=str(i)+" + "                 
+    print('tổng của %d là :\n'%n,a,'0 =',TongChuSo(n))
 
 bt12()
