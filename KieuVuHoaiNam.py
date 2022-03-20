@@ -172,7 +172,11 @@ def bt11():
 # B1807650 
 def TongChuSo(n):
     tong=0
+    while n>0:
         tong += n % 10
+        n = int(n//10)
+    return tong
+
 def bt12():
     while True:
         try:
@@ -180,7 +184,10 @@ def bt12():
              if n>0: break
              else : print('Vui lòng nhập n > 0 ')
         except ValueError:
-            print('Dữ liệu đầu vào không hợp lệ')            
-   
-    print('tổng của %d là : '%n,TonngChuSo(n))
+            print('Dữ liệu đầu vào không hợp lệ')   
+    a=''
+    for i in str(n) : 
+        a+=str(i)+"+"                 
+    print('tổng của %d là :'%n,a,'0 =',TongChuSo(n))
 
+bt12()
