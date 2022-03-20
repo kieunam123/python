@@ -21,7 +21,7 @@ def bt2():
                 print('n phải lớn hơn 0 và nhỏ hơn 10, nhập lại: ')
         except ValueError:
             print('sai dữ liệu đầu vào! nhập lại : ')
-    print('%c + %c%c + %c%c%c + %c%c%c%c ='%(n,n,n,n,n,n,n,n,n,n),n+(n+n)+(n+n+n)+(n+n+n+n))
+    print('%d + %d%d + %d%d%d + %d%d%d%d ='%(n,n,n,n,n,n,n,n,n,n),n+(n+n)+(n+n+n)+(n+n+n+n))
 
 # cau 3
 # Kieu Vu Hoai Nam
@@ -36,20 +36,22 @@ def bt3():
                 print('vui lòng nhập b khác 0')
         except ValueError:
             print('sai dữ liệu đầu vào! Nhập lại : ')
-    print(a+' + '+b+' =',a+b)
-    print(a+' - '+b+' =',a-b)
-    print(a+' x '+b+' =',a*b)
-    print(a+' / '+b+' =',a//b)
-    print(a+' % '+b+' =',a%b)
-    print(a+' ^ '+b+' =',a**b)
+    print('a + b =',round(a+b,2))
+    print('a - b =',round(a-b,2))
+    print('a x b =',round(a*b,2))
+    print('a / b =',round(a//b,2))
+    print('a % b =',round(a%b,2))
+    print('a ^ b =',round(a**b,2))
 
 # cau 4
 # Kieu Vu Hoai Nam
 # B1807650
+from ast import Try
 from cmath import pi
 from email.policy import default
 import math
 from tkinter import N
+from unittest import skip
 def bt4():
     while True:
         try:
@@ -190,4 +192,42 @@ def bt12():
         a+=str(i)+" + "                 
     print('tổng của %d là :\n'%n,a,'0 =',TongChuSo(n))
 
-bt12()
+# cau 13
+# Kieu Vu Hoai Nam
+# B1807650 
+def bt13():
+    values = []
+    for i in range(1000, 2001):
+        s = str(i)
+        if (int(s[0])%2!=0) and (int(s[1])%2!=0) and (int(s[2])%2!=0) and (int(s[3])%2!=0):
+            values.append(s)
+    print (",".join(values))
+
+# cau 14
+# Kieu Vu Hoai Nam
+# B1807650 
+def bt14():
+    sum=0.0
+    while True:
+        try:
+            n=int(input('nhập n<0 : '))
+            if n>0 : break
+            else : print('Vui lòng nhập n > 0')
+        except ValueError: print('sai định dạng, vui lòng nhập lại')
+    for i in range(1,n+1):
+        sum+=float(float(i)/(i+1))
+    print(sum)
+
+# cau 15
+# Kieu Vu Hoai Nam
+# B1807650 
+def f(n):
+    if n == 0: return 0
+    elif n == 1: return 1
+    else: return f(n-1)+f(n-2)
+
+def bt15():
+    n=int(input("Nhập số n: "))
+    values = [str(f(x)) for x in range(0, n+1)]
+    print (",".join(values))
+
