@@ -47,6 +47,7 @@ def bt3():
 # Kieu Vu Hoai Nam
 # B1807650
 from cmath import pi
+from email.policy import default
 import math
 from tkinter import N
 def bt4():
@@ -103,9 +104,11 @@ def bt6():
 # Kieu Vu Hoai Nam
 # B1807650
 def bt7():
+    string=''
     for i in range(5000,7000):
         if i%7==0 and i%5!=0 :
-            print(i)
+            string+=str(i)+" "
+    print(string) 
         
 # cau 8
 # Kieu Vu Hoai Nam
@@ -135,3 +138,49 @@ def bt9():
 # cau 10
 # Kieu Vu Hoai Nam
 # B1807650 
+def is_snt(n):
+    if (n<2):
+        return False
+    for i in range(2,int(math.sqrt(n)+1)) :
+        if (n%i==0): return False
+    return True
+
+def bt10():
+    snt=''
+    n=int(input("nhập n : "))
+    if n>=2:
+        snt+="2"+" "
+    for i in range(3,n+1):
+        if(is_snt(i)):
+            snt+=str(i)+" "
+        i=i+2
+    print(snt)
+
+# cau 11
+# Kieu Vu Hoai Nam
+# B1807650 
+def bt11():
+    snt=''
+    for i in range(1001,9999):
+        if(is_snt(i)):
+            snt+=str(i)+" "
+        i+=1
+    print(snt)
+
+# cau 12
+# Kieu Vu Hoai Nam
+# B1807650 
+def TongChuSo(n):
+    tong=0
+        tong += n % 10
+def bt12():
+    while True:
+        try:
+             n=int(input('nhập số nguyên n : '))
+             if n>0: break
+             else : print('Vui lòng nhập n > 0 ')
+        except ValueError:
+            print('Dữ liệu đầu vào không hợp lệ')            
+   
+    print('tổng của %d là : '%n,TonngChuSo(n))
+
