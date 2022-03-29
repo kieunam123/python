@@ -37,4 +37,20 @@ def cau3():
             char+=i
         else: char+=i.upper()
     print("các chữ cái đã được in hoa : ",char)
-cau3()
+
+# Kieu Vu Hoai Nam
+# B1807650
+# Cau 4
+def cau4():
+    values = []
+    for i in range(100, 301):
+        s = str(i)
+        if (int(s[0])%2!=0) and (int(s[1])%2!=0) and (int(s[2])%2!=0):
+            values.append(s)
+    print (",".join(values))
+
+# Kieu Vu Hoai Nam
+# B1807650
+# Cau 5
+def cau5():
+    
