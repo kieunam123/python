@@ -120,4 +120,21 @@ def cau10():
 # B1807650
 # Cau 11
 def cau11():
+    string = input("nhập vào câu của bạn : ")
+    count={}
+    for i in string:
+        if i in count:
+            count[i] +=1
+        else:
+            count[i] = 1
+    for i in sorted(count, key=count.get, reverse=False):
+        print(i, count[i])
+
+# Kieu Vu Hoai Nam
+# B1807650
+# Cau 12
+def cau12():
+    chuoi=input("Nhập chuỗi : ")
+    chuoi = chuoi[::-1]
+    print (chuoi)
 
