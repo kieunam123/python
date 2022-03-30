@@ -98,4 +98,26 @@ def cau9():
 # B1807650
 # Cau 10
 def cau10():
+    mang=[]
+    kq=[]
+    print("nhập vào tuple gồm 7 số : ")
+    for i in range (0,8):
+        while True:
+            try:
+                n = input("số thứ %d : "%i)
+                if n.isnumeric() : break
+                else : print("vui lòng nhập số")
+            except ValueError: print("dữ liệu đầu vào ko hợp lệ")
+        tuple[n]
+        mang.append(n)
+    for a in mang:
+        if int(a)%2==0:
+            kq.append(a)
+            tuple[kq]
+    print(kq)
+
+# Kieu Vu Hoai Nam
+# B1807650
+# Cau 11
+def cau11():
 
