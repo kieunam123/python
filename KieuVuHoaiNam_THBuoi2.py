@@ -76,4 +76,26 @@ def cau7():
     del list[3]
     del list[3]
     print(list)
-cau7()
+
+# Kieu Vu Hoai Nam
+# B1807650
+# Cau 8
+def cau8():
+    list1={12,3,78,35,55,120}
+    list2={12,24,35,78,88,120,155}
+    print(list1 & list2)
+
+# Kieu Vu Hoai Nam
+# B1807650
+# Cau 9
+def cau9():
+    mang=[]
+    for i in range (5,21):
+        mang.append(str(i**2))
+    print(",".join(mang))
+
+# Kieu Vu Hoai Nam
+# B1807650
+# Cau 10
+def cau10():
+
