@@ -53,4 +53,27 @@ def cau4():
 # B1807650
 # Cau 5
 def cau5():
-    
+    chan=[]
+    items=[x for x in input("Nhập chuỗi cách nhau bởi dấu phẩy: ").split(',')]
+    for i in items:
+        if int(i)%2!=0:
+            chan.append(i)
+    print("Các số lẻ trong chuỗi: ",",".join(chan))
+
+# Kieu Vu Hoai Nam
+# B1807650
+# Cau 6
+def cau6():
+    for i in range(1,21):
+        print(str(i)+"-"+str(i**2))
+
+# Kieu Vu Hoai Nam
+# B1807650
+# Cau 7
+def cau7():
+    list=[12,24,35,70,88,120,155]
+    del list[0] 
+    del list[3]
+    del list[3]
+    print(list)
+cau7()
