@@ -10,8 +10,8 @@ def cau1():
             num+=i
         else: char+=i
     print("số lượng chữ số trong câu : ", len(num))
-    print("số lượng chữ cái trong câu : ", len(char))
-            
+    print("số lượng chữ cái trong câu : ", len(char)) 
+    
 # Kieu Vu Hoai Nam
 # B1807650
 # Cau 2
@@ -101,7 +101,7 @@ def cau10():
     mang=[]
     kq=[]
     print("nhập vào tuple gồm 7 số : ")
-    for i in range (0,8):
+    for i in range (1,8):
         while True:
             try:
                 n = input("số thứ %d : "%i)
@@ -137,4 +137,3 @@ def cau12():
     chuoi=input("Nhập chuỗi : ")
     chuoi = chuoi[::-1]
     print (chuoi)
-
