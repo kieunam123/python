@@ -1,4 +1,6 @@
 import numpy as np
+import matplotlib.pyplot as plt
+import math
 # Kieu Vu Hoai Nam
 # B1807650
 def bt1():
@@ -51,4 +53,11 @@ def bt7():
     chan=np.where(d%2==0)
     print(chan)
 
-bt7()
+# Kieu Vu Hoai Nam
+# B1807650
+def bt8():
+    x=np.linspace(-10,10,np=20,dtype=int)
+    y=np.sin(x)
+    plt.scatter(x,y)
+    plt.show()
+bt8()
